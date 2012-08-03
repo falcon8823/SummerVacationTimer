@@ -1,0 +1,29 @@
+.hero-unit
+  - unless current_user
+    %h1
+      お前の夏休みは
+      %br
+      あとn日しかないぞ！
+  - else
+    %h1
+      = "@#{current_user.screen_name}"
+      %br
+      お前の夏休みは
+      %br
+      = "あと#{current_user.lastdays}日しかないぞ！"
+
+.row
+  .span12
+    %h3= "#{User.count} 人のユーザが利用しています"
+    %hr
+    - @users.each do |u|
+      %a{href: "http://twitter.com/#{u.screen_name}", target: '_blank'}
+        %img{src: u.image, width: '48px'}
+
+.row
+  .span12
+    %h2 注意
+    %ul
+      %li アジャイルに機能追加していきます。
+      %li つぶやき機能はまだ未実装です。
+      %li 最終日は残り1日とカウントされます。（端数切り上げ）

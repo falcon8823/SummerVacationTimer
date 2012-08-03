@@ -1,0 +1,11 @@
+.row
+  .span12
+    %h1 設定
+    %hr
+    = form_for @user, html: {class: 'form-horizonatal'} do |f|
+      .control-group
+        = f.label "夏休みの最終日", class: 'control-label'
+        .controls
+          = f.date_select :end_date, class: 'date_select'
+      .form-actions
+        = f.submit "保存", class: 'btn btn-primary'
