@@ -1,4 +1,4 @@
-LastNdaysForSummerVacation::Application.routes.draw do
+SummerVacationTimer::Application.routes.draw do
   root to: 'Welcome#top'
 
   match '/auth/:provider/callback' => 'sessions#callback'

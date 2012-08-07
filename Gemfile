@@ -20,7 +20,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails'
   gem 'twitter_bootstrap_form_for'
-  gem 'omniauth-twitter'
 end
 
 gem 'jquery-rails'
@@ -43,4 +42,5 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'rails-i18n'
 gem 'twitter'
+gem 'omniauth-twitter'
 

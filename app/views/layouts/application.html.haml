@@ -1,10 +1,10 @@
 !!!
 %html
   %head
-    %title お前の夏休みはあとn日しかないぞ！
+    %title 夏休みはあとn日しかない
     = stylesheet_link_tag "application", media: :all
     = csrf_meta_tag
-
+    = render partial: 'analytics'
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -13,7 +13,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          = link_to "お前の夏休みはあとn日しかないぞ！", root_path, class: 'brand'
+          = link_to "夏休みはあとn日しかない", root_path, class: 'brand'
           
           - if current_user
             .btn-group.pull-right

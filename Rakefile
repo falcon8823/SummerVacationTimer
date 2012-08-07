@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LastNdaysForSummerVacation::Application.load_tasks
+SummerVacationTimer::Application.load_tasks

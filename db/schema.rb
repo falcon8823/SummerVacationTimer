@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120802220008) do
+ActiveRecord::Schema.define(:version => 20120807130452) do
 
   create_table "users", :force => true do |t|
     t.string   "provider"
@@ -20,8 +20,10 @@ ActiveRecord::Schema.define(:version => 20120802220008) do
     t.string   "screen_name"
     t.string   "image"
     t.date     "end_date"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "oauth_token"
+    t.string   "oauth_token_secret"
   end
 
 end
